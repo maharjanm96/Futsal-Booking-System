@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+}
+.main {
+  height: 100vh;
+  width: 100%;
+  background: url(football.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.navbar {
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  color: forestgreen;
+  font-size: 32px;
+}
+.logo a {
+  color: ghostwhite;
+}
+
+.menu {
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: ghostwhite;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+  padding: 10px 20px;
+}
+
+ul li a:hover {
+  color: forestgreen;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.srch:focus {
+  outline: none;
+}
+
+.form-box {
+  width: 350px;
+  height: 520px;
+  position: absolute;
+  left: 570px;
+  top: 40px;
+  margin: 6% auto;
+  background: ghostwhite;
+  box-shadow: 0 0 20px forestgreen;
+  border-radius: 30px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  color: black;
+  font-weight: bold;
+
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btnn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: forestgreen;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.social-icons {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 40px;
+  margin: 0 18px;
+  box-shadow: 0 0 20px #7f7f7f3d;
+  cursor: pointer;
+  border-radius: 45%;
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 220px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 120%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+.submit-btn {
+  width: 120%;
+  padding: 10px 100px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: forestgreen;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.check-box {
+  margin: 30px 15px 30px 0px;
+}
+
+span {
+  color: black;
+  font-size: 13px;
+  bottom: 68px;
+  position: absolute;
+  font-weight: bold;
+}
+b {
+  color: black;
+  font-size: 13px;
+  bottom: 70px;
+  position: absolute;
+  font-weight: bold;
+}
+
+#login {
+  left: 50px;
+}
+
+#register {
+  left: 450px;
+}
