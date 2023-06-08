@@ -1,6 +1,6 @@
 <!-- user le edit button click garey pacchi update form vako dashboard -->
 <?php
-//    session_start();
+   session_start();
    include('config.php');
 ?>
 <!DOCTYPE html>

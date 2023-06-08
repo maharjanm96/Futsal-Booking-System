@@ -312,7 +312,7 @@
 
 									if($con){
 										if(isset($_POST['check'])){
-											$Contact = $_POST['Contact'];
+											//$Contact = $_POST['Contact'];
 
 												if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']== $Contact)
 												{

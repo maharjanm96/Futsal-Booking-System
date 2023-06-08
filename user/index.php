@@ -1,24 +1,19 @@
 <!-- User ko main login page ra register page -->
 <?php
    session_start();
-
 ?>
 <!DOCTYPE html>    
 <html lang="en">    
 <head>    
-    <title>Futsal Booking Login</title>  
-   
-    <link rel="stylesheet" type="text/css" href="css/userstyle.css">
-          
+    <title>Futsal Booking Login</title>   
+    <link rel="stylesheet" type="text/css" href="css/userstyle.css">      
 </head>     
 <body> 
-
    <div class="main">
       <div class="navbar">
          <div class="icon">
             <h2 class="logo">FUT<a>x</a>SAL</h2>           
          </div>
-
                <div class="menu">
                   <ul>
                      <li><a href="">HOME</a></li>
@@ -27,7 +22,6 @@
                      <li><a href="">INFO</a></li>
                      <li><a href="">CONTACT</a></li>
                      
-
                      <?php
                         if(isset($_SESSION['status']))
                         {
@@ -145,9 +139,6 @@
             y.style.left = "450px";
             z.style.left = "0";
          }
-
-        
-
       </script>
    </body>  
 </html>     
