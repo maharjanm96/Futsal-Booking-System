@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	  <script src="https://khalti.s3.ap-south-1.amazonaws.com/KPG/dist/2020.12.17.0.0.0/khalti-checkout.iffe.js"></script>
 
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -200,15 +200,12 @@
                     }
 						.buttn {
 						background: forestgreen;
-						padding: 11.5px 155px;
+						padding: 11.5px 50px;
 						color: black;
 						font-size: 15px;
 						font-weight: normal;
-						border: 0;
-						outline: none;
+						border: none;
 						cursor: pointer;
-						/* width: 200px; */
-						margin: 10px auto 0;
 						border-radius: 30px;
 						}
 						.buttn:hover{
@@ -298,10 +295,10 @@
 								<th>Name</th>
 								<th>Booked Date</th>
 								<th>Booked Time</th>
-								<!-- <th>Contact</th> -->
-								<!-- <th>Delete Booking</th> -->
 								<th>Cancel Book</th>
 								<th>Update Booking</th>
+								<th>Payment</th>
+								<th>Status</th>
 								
 							</tr>
 						</thead>
@@ -357,14 +354,11 @@
 													<style>
 														.cancel-btn{
 															background: forestgreen;
-															padding: 10px 30px ;
+															padding: 10px 20px ;
 															color: black;
 															font-size: 14px;
-															font-weight: normal;
 															outline: none;
 															cursor: pointer;
-															/* width: 10px; */
-															/* margin: 100px auto 0; */
 															border-radius: 30px;
 														}
 														.cancel-btn:hover{
@@ -380,23 +374,85 @@
 													<style>
 														.update-btn{
 														background: forestgreen;
-														padding: 10px 30px;
+														padding: 10px 20px;
 														color: black;
 														font-size: 14px;
-														font-weight: normal;
-														border: 0;
-														outline: none;
+														border: none;												
 														cursor: pointer;
-														width: 130px;
-														margin: 10px auto 0;
+														
 														border-radius: 30px;
 														}
 														.update-btn:hover {
 														background: cornflowerblue;
 														color: white;
 														}
-													</style>			
-																																																	 												 																																				
+													</style>	
+													
+													<td>
+														
+														<button class="pay-btn" id="payment-button" >Pay</button>
+													</td>
+														 <script>
+													var config = {
+													// replace the publicKey with yours
+													"publicKey": "test_public_key_ff5d469c87b0434eba698bd395861110",
+													"productIdentity": "1234567890",
+													"productName": "Dragon",
+													"productUrl": "http://gameofthrones.wikia.com/wiki/Dragons",
+													"paymentPreference": [
+														"KHALTI",
+														"EBANKING",
+														"MOBILE_BANKING",
+														"CONNECT_IPS",
+														"SCT",
+														],
+													"eventHandler": {
+														onSuccess (payload) {
+															// hit merchant api for initiating verfication
+															console.log(payload);
+															alert("Success");													
+					
+														},
+														onError (error) {
+															console.log(error);
+														},
+														onClose () {
+															console.log('widget is closing');
+														}
+													}
+												};
+
+												var checkout = new KhaltiCheckout(config);
+												var btn = document.getElementById("payment-button");
+												btn.onclick = function changeText() {
+													// minimum transaction amount must be 10, i.e 1000 in paisa.
+													checkout.show({amount: 10000});
+													
+													var statusText = document.getElementById("statusText");
+    												statusText.textContent = "Paid";													
+																										
+												}
+											</script>
+
+														<style>
+															.pay-btn {
+															background: forestgreen;
+															padding: 10px 30px;
+															color: black;
+															font-size: 14px;
+															border: none;												
+															cursor: pointer;														
+															border-radius: 30px;
+															}
+
+															.pay-btn:hover {
+															background-color: purple;
+															color:white;
+															}
+														</style>	
+														<td> <p id="statusText">Pending</p></td>
+
+																																																													 												 																																				
 												<?php
 												echo "</td>";
 												echo "<tr/>";
