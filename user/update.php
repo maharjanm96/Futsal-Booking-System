@@ -203,6 +203,10 @@
 
 						<label for="time">Select Time:<label>
 						<input type="text" id="result" name="time" required><br>
+
+		</div>
+
+		<div class="slots">
 						
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="7:00 AM TO 8:00 AM">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="8:00 AM TO 9:00 AM">
@@ -210,12 +214,16 @@
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="10:00AM TO 11:00AM">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="11:00AM TO 12:00PM">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="12:00PM TO 1:00 PM">
+		</div>
+		<div class="slots-second">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="1:00 PM TO 2:00 PM">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="2:00 PM TO 3:00 PM">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="3:00 PM TO 4:00 PM">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="4:00 PM TO 5:00 PM">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="5:00 PM TO 6:00 PM">
 							<input type="button" id="slot" name="time" onclick="myFunction(this.value)" value="6:00 PM TO 7:00 PM"><br>
+							</div>
+
   
 								<script>
 									function myFunction(time) {
@@ -227,7 +235,7 @@
 						<button type="submit" class="bbtn" id="submit" name="update">Update Booking</button>
 																										 
  					</form>		
-			</div>
+			
 			
 			
 		</main>
