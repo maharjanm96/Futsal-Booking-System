@@ -82,24 +82,7 @@ if (mysqli_connect_error()) {
                         else {
                         echo 'Error registering team: ' . mysqli_error($conn);
                         }
-                    }
-                       
-                            // Find matching teams based on strength level
-                            // $sql = "SELECT * FROM teams WHERE strength='$teamStrength' AND name<>'$teamName'";
-                            // $result = mysqli_query($conn, $sql);
-
-                            // if (mysqli_num_rows($result) > 0) {
-                            //     echo 'Matching teams found:<br>';
-
-                            //     while ($row = mysqli_fetch_assoc($result)) {
-                            //         echo $row['name'] . ' (' . $strengthLevels[$row['strength']] . ')<br>';
-                            //     }
-                            // } else {
-                            //     echo '<br>No matching teams found';
-                            // }
-
-                            //$matchLevel = $strengthLevels[$teamStrength];
-
+                    }        
             }
 
 mysqli_close($conn);

@@ -167,7 +167,7 @@
 
                         <div class= "team-register">
             
-                            <form method="post" action="teamtest.php">
+                            <form method="post" action="algorithm.php">
                                 <label>Enter Your Team Name:</label>
                                 <input type="text" name="teamName" required><br>
                                 <label>Please Select Your Team's Strength:</label>

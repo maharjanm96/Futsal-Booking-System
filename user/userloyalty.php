@@ -7,12 +7,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <script src="https://khalti.s3.ap-south-1.amazonaws.com/KPG/dist/2020.12.17.0.0.0/khalti-checkout.iffe.js"></script>
+	  <!-- <script src="https://khalti.s3.ap-south-1.amazonaws.com/KPG/dist/2020.12.17.0.0.0/khalti-checkout.iffe.js"></script> -->
 
 	<!-- Boxicons -->
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<!-- My CSS -->
-	<link rel="stylesheet" href="css/userdashstyle.css">	
+	<link rel="stylesheet" href="./css/userdashstyle.css">	
 
 	<title>FUTxSAL User</title>
 </head>
@@ -392,48 +392,9 @@
 														
 														<button class="pay-btn" id="payment-button" >Pay</button>
 													</td>
-														 <script>
-													var config = {
-													// replace the publicKey with yours
-													"publicKey": "test_public_key_ff5d469c87b0434eba698bd395861110",
-													"productIdentity": "1234567890",
-													"productName": "Dragon",
-													"productUrl": "http://gameofthrones.wikia.com/wiki/Dragons",
-													"paymentPreference": [
-														"KHALTI",
-														"EBANKING",
-														"MOBILE_BANKING",
-														"CONNECT_IPS",
-														"SCT",
-														],
-													"eventHandler": {
-														onSuccess (payload) {
-															// hit merchant api for initiating verfication
-															console.log(payload);
-															alert("Success");													
-					
-														},
-														onError (error) {
-															console.log(error);
-														},
-														onClose () {
-															console.log('widget is closing');
-														}
-													}
-												};
-
-												var checkout = new KhaltiCheckout(config);
-												var btn = document.getElementById("payment-button");
-												btn.onclick = function changeText() {
-													// minimum transaction amount must be 10, i.e 1000 in paisa.
-													checkout.show({amount: 10000});
 													
-													var statusText = document.getElementById("statusText");
-    												statusText.textContent = "Paid";													
-																										
-												}
-											</script>
-
+													<?php include('khalti.php');
+													?>
 														<style>
 															.pay-btn {
 															background: forestgreen;
@@ -450,7 +411,8 @@
 															color:white;
 															}
 														</style>	
-														<td> <p id="statusText">Pending</p></td>
+														<td></div>
+															<div class="pen"><p id="statusText">Pending</p></div></td>
 
 																																																													 												 																																				
 												<?php
@@ -471,7 +433,7 @@
 
 							</tbody>
 					</table>
-			</div>
+			
                                     							                                  	
 		</main>
 		<!-- MAIN -->

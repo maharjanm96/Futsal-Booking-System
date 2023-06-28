@@ -1,7 +1,7 @@
 <!-- User side bata book garda bann dekhauni database code -->
 <?php      
     include('config.php'); 
-    //include('mailsender.php'); 
+    include('mailsender.php'); 
 
     $Contact = $_POST['Contact'];  
       
