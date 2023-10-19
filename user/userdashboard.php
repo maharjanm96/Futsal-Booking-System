@@ -35,6 +35,7 @@
 			</li>
 			<li>
 				<a href="userdashbooking.php">
+				
 					<i class='bx bxs-shopping-bag-alt' ></i>
 					<span class="text">Bookings </span>
 				</a>

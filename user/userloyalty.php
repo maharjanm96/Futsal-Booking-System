@@ -288,17 +288,20 @@
 						<i class='bx bx-filter' ></i>
 					</div>
 					<table>
+						
+					
 						<thead>
 							<tr>
+								
 								<th></th>
 								<th>S.N</th>							
 								<th>Name</th>
 								<th>Booked Date</th>
 								<th>Booked Time</th>
-								<th>Cancel Book</th>
+								<th>Cancel Booking</th>
 								<th>Update Booking</th>
 								<th>Payment</th>
-								<th>Status</th>
+								<!-- <th>Status</th> -->
 								
 							</tr>
 						</thead>
@@ -342,8 +345,7 @@
 												echo "<p>$time</p>";												
 												echo"</td>";
 
-												?>																																					 
-													<?php						
+																		
 													echo '<td>';
 													echo "<a class='cancel-btn'  href='canceldatabase.php?Contact=$row[Contact] Name=$row[fname] Date=$row[date] Time=$row[time]'>Cancel</a>";
 													echo '</td>';
@@ -389,12 +391,14 @@
 													</style>	
 													
 													<td>
+																				
+													 <button class="pay-btn" id="payment-button">Pay</button>
+														<?php include('khalti.php');
 														
-														<button class="pay-btn" id="payment-button" >Pay</button>
+														?> 														
 													</td>
 													
-													<?php include('khalti.php');
-													?>
+													
 														<style>
 															.pay-btn {
 															background: forestgreen;
@@ -412,7 +416,7 @@
 															}
 														</style>	
 														<td></div>
-															<div class="pen"><p id="statusText">Pending</p></div></td>
+															<!-- <div class="pen"><p id="statusText">Pending</p></div></td> -->
 
 																																																													 												 																																				
 												<?php

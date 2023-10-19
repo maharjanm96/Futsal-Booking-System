@@ -170,6 +170,8 @@
                             <form method="post" action="algorithm.php">
                                 <label>Enter Your Team Name:</label>
                                 <input type="text" name="teamName" required><br>
+								<label>Gmail:</label>
+								<input type="email" name="email" required><br>
                                 <label>Please Select Your Team's Strength:</label>
                                 <input type="text" name = "teamStrength" id="result" required>                           
                            

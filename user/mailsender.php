@@ -20,7 +20,7 @@ use PHPMailer\PHPMailer\PHPMailer;
     $mail ->SMTPSecure = 'ssl';
     $mail ->Port = 465;
 
-    $mail ->setFrom('shadowdead714@gmail.com');
+    $mail ->setFrom('shadowdead714@gmail.com','FUTxSAL');
 
     $mail ->addAddress($_POST['email']);
     $mail ->isHTML(true);

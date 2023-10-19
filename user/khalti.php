@@ -3,7 +3,6 @@
     <script src="https://khalti.s3.ap-south-1.amazonaws.com/KPG/dist/2020.12.17.0.0.0/khalti-checkout.iffe.js"></script>
 </head>
 <body>
-    ...
     <!-- Place this where you need payment button -->
     <!-- <button id="payment-button">Pay with Khalti</button> -->
     <!-- Place this where you need payment button -->
@@ -43,10 +42,8 @@
             // minimum transaction amount must be 10, i.e 1000 in paisa.
             checkout.show({amount: 1000});
             
-
         }
     </script>
     <!-- Paste this code anywhere in you body tag -->
-    ...
 </body>
 </html>
