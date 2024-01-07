@@ -188,7 +188,7 @@
 												<label for="Contact">Contact:<label>&nbsp;
 												<input type="tel" id="contact" name="Contact"  required pattern="98[0-9]{8}">&nbsp;&nbsp;&nbsp;&nbsp;
 												<label for ="email">Email Address:<label>&nbsp;&nbsp;
-												<input type="text" id="email" name="email"  required><br>
+												<input type="text" id="email" name="email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="abc12@gmail.com"><br>
 											<!-- <br><label for="strenght">Your Team Strength:&nbsp;
 												<input type="number" id="strength" name="strength" placeholder="1 = WEAK AND 5 = STRONG " required> -->
 												

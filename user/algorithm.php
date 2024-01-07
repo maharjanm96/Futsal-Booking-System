@@ -29,7 +29,7 @@
 		<ul class="side-menu top">
 			<li class="active">
 
-				<a href="#">
+				<a href="userdashboard.php">
 					<i class='bx bxs-dashboard' ></i>
 					<span class="text">Dashboard</span>
 				</a>
@@ -212,16 +212,16 @@
 						<form method ="post" action= "inviteMailer.php">
 
 							<label>Enter your team name:</label>
-							<input type="text" name="teamName" class="inp" required><br>
+							<input type="text" name="teamName" class="inp" required ><br>
 
 							<label>Enter your team strength:</label>
-							<input type="text" name="teamStrength" class="inp" required><br>
+							<input type="number" name="teamStrength" class="inp" required><br>
 
 							<label>Enter opponet's email to send invite:</label>
-							<input type="email" name="email" class="inp" required><br>
+							<input type="email" name="email" class="inp" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="abc12@gmail.com"><br>
 
 							<label>Enter booked futsal date:</label>
-							<input type="text" name="futsalDate" class="inp" required><br>
+							<input type="date" name="futsalDate" class="inp" required><br>
 
 							<label>Enter booked futsal time:</label>
 							<input type="text" name="futsalTime" class="inp" required><br>

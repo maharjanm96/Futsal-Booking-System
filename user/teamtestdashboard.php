@@ -171,9 +171,9 @@
                                 <label>Enter Your Team Name:</label>
                                 <input type="text" name="teamName" required><br>
 								<label>Gmail:</label>
-								<input type="email" name="email" required><br>
+								<input type="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="abc12@gmail.com"><br>
                                 <label>Please Select Your Team's Strength:</label>
-                                <input type="text" name = "teamStrength" id="result" required>                           
+                                <input type="number" name = "teamStrength" id="result" required>                           
                            
                                 <input type="button" id="str-btn" name="strength" onclick="myFunction(this.value)" value="1">
                                 <input type="button" id="str-btn" name="strength" onclick="myFunction(this.value)" value="2">

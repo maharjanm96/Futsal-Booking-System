@@ -35,9 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->send();
         //echo "Invitation sent successfully!";
-        $_SESSION['status'] = "<h1><center>Invitation Sent.</center></h1>"; 
+        
            
             header("Location: http://localhost/project/user/userdashboard.php");
+            $_SESSION['status'] = "<h1><center>Invitation Sent.</center></h1>"; 
 
     } catch (Exception $e) {
         echo "Error: Invitation could not be sent. {$mail->ErrorInfo}";

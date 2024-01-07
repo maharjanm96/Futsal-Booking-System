@@ -40,6 +40,7 @@
 				$stmt->bind_param("sssss", $fname, $Contact, $email, $date, $time);
 				$stmt->execute();
 				$_SESSION['status'] = "<h1><center>Your game has been booked from " .$time. "</center></h1>";
+				include('mailsender.php'); 
 				header("Location: http://localhost/project/user/userdashboard.php");
 			}
 			
